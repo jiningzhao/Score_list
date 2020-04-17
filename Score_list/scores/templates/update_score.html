@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/update_score/" method = "POST">
+    请输入客户端号：<input type="text" name = "customer_id">
+    请输入最新的分数：<input type="text" name = "score">
+    <input type="submit" value = "提交">
+    {% csrf_token %}
+</form>
+
+</body>
+</html>
